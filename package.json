@@ -1,11 +1,12 @@
 {
 	"name": "a-frame-completion",
 	"displayName": "A-Frame Completion",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"publisher": "mlueckert",
 	"icon": "images/logo.jpg",
 	"galleryBanner": {
-		"color": "#24C9FF"
+		"color": "#24C9FF",
+		"theme": "dark"
 	},
 	"repository": {
 		"type": "git",
