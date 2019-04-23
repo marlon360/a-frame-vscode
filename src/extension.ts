@@ -25,8 +25,8 @@ export function activate(context: vscode.ExtensionContext) {
 				// insert element tag with tags
 				completion.insertText = new vscode.SnippetString('<' + element.tag + '>${1}</' + element.tag + '>');
 				// add documentation
-				completion.documentation = new vscode.MarkdownString("*A-Frame Primitive: "+element.tag+"*\n\nDescription: \n"+element.description);
-				
+				completion.documentation = new vscode.MarkdownString("*A-Frame Primitive: " + element.tag + "*\n\nDescription: \n" + element.description);
+
 				// test if an open tag was already written
 				let linePrefix = document.lineAt(position).text.substr(0, position.character);
 				let openTag = linePrefix.lastIndexOf('<');
@@ -55,18 +55,18 @@ export function activate(context: vscode.ExtensionContext) {
 
 				let elements = (<any>data).elements;
 				elements.forEach((element) => {
-					let itemIndex = linePrefix.indexOf('<'+element.tag+' ');
+					let itemIndex = linePrefix.indexOf('<' + element.tag + ' ');
 					let closingTagIndex = linePrefix.indexOf('>')
 					if (itemIndex === -1 || closingTagIndex > itemIndex) {
 						return undefined;
 					}
 					element.attributes.forEach((attribute) => {
 						const comp = new vscode.CompletionItem(attribute.name, vscode.CompletionItemKind.Method)
-						comp.insertText = new vscode.SnippetString(attribute.name+'="' + '${1:'+attribute.default+'}"');
-						comp.documentation = new vscode.MarkdownString("Component Mapping: `"+attribute.componentMapping+"`\n"+"Default: `"+attribute.default+"`\n");
+						comp.insertText = new vscode.SnippetString(attribute.name + '="' + '${1:' + attribute.default + '}"');
+						comp.documentation = new vscode.MarkdownString("Component Mapping: `" + attribute.componentMapping + "`\n" + "Default: `" + attribute.default + "`\n");
 						completions.push(comp);
 					})
-					
+
 				})
 
 				return completions;
@@ -75,6 +75,45 @@ export function activate(context: vscode.ExtensionContext) {
 		' ' // triggered whenever a ' ' is being typed
 	);
 
-	context.subscriptions.push(tagProvider, attributeProvider);
+	const registerProvider = vscode.languages.registerCompletionItemProvider(
+		'javascript',
+		{
+			provideCompletionItems(document: vscode.TextDocument, position: vscode.Position) {
+
+
+				let snippet = `AFRAME.registerComponent('\${1}', {
+	schema: {
+		\${0}
+	},
+
+	init: function () {
+	  // Do something when component first attached.
+	},
+
+	update: function () {
+	  // Do something when component's data is updated.
+	},
+
+	remove: function () {
+	  // Do something the component or its entity is detached.
+	},
+
+	tick: function (time, timeDelta) {
+	  // Do something on every scene tick or frame.
+	}
+});
+`;
+
+				const completion = new vscode.CompletionItem('AFRAME.registerComponent');
+				completion.insertText = new vscode.SnippetString(snippet);
+				completion.documentation = new vscode.MarkdownString("*A-Frame Register Component* ");
+
+
+				return [completion];
+			}
+		}
+	);
+
+	context.subscriptions.push(tagProvider, attributeProvider, registerProvider);
 
 }
