@@ -1,0 +1,2795 @@
+{
+  "elements": [
+    {
+      "tag": "a-box",
+      "description": "The box primitive creates shapes such as boxes, cubes, or walls.",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "depth",
+          "componentMapping": "geometry.depth",
+          "default": "1"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "geometry.height",
+          "default": "1"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-depth",
+          "componentMapping": "geometry.segmentsDepth",
+          "default": "1"
+        },
+        {
+          "name": "segments-height",
+          "componentMapping": "geometry.segmentsHeight",
+          "default": "1"
+        },
+        {
+          "name": "segments-width",
+          "componentMapping": "geometry.segmentsWidth",
+          "default": "1"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "width",
+          "componentMapping": "geometry.width",
+          "default": "1"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-camera",
+      "description": "The camera primitive determines what the user sees. We can change the viewport by modifying the camera entity's position and rotation.",
+      "attributes": [
+        {
+          "name": "far",
+          "componentMapping": "camera.far",
+          "default": "10000"
+        },
+        {
+          "name": "fov",
+          "componentMapping": "camera.fov",
+          "default": "80"
+        },
+        {
+          "name": "look-controls-enabled",
+          "componentMapping": "look-controls.enabled",
+          "default": "true"
+        },
+        {
+          "name": "near",
+          "componentMapping": "camera.near",
+          "default": "0.5"
+        },
+        {
+          "name": "reverse-mouse-drag",
+          "componentMapping": "look-controls.reverseMouseDrag",
+          "default": "false"
+        },
+        {
+          "name": "wasd-controls-enabled",
+          "componentMapping": "wasd-controls.enabled",
+          "default": "true"
+        }
+      ]
+    },
+    {
+      "tag": "a-circle",
+      "description": "The circle primitive creates circles surfaces using the [geometry](../components/geometry.md) component with the type set to `circle`.",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "material.height",
+          "default": "256"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "radius",
+          "componentMapping": "geometry.radius",
+          "default": "1"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments",
+          "componentMapping": "geometry.segments",
+          "default": "32"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "theta-length",
+          "componentMapping": "geometry.thetaLength",
+          "default": "360"
+        },
+        {
+          "name": "theta-start",
+          "componentMapping": "geometry.thetaStart",
+          "default": "0"
+        },
+        {
+          "name": "width",
+          "componentMapping": "material.width",
+          "default": "512"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-cone",
+      "description": "The cone primitive creates a cone shape.",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "geometry.height",
+          "default": "1"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "open-ended",
+          "componentMapping": "geometry.openEnded",
+          "default": "false"
+        },
+        {
+          "name": "radius-bottom",
+          "componentMapping": "geometry.radiusBottom",
+          "default": "1"
+        },
+        {
+          "name": "radius-top",
+          "componentMapping": "geometry.radiusTop",
+          "default": "0.8"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-height",
+          "componentMapping": "geometry.segmentsHeight",
+          "default": "18"
+        },
+        {
+          "name": "segments-radial",
+          "componentMapping": "geometry.segmentsRadial",
+          "default": "36"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "theta-length",
+          "componentMapping": "geometry.thetaLength",
+          "default": "360"
+        },
+        {
+          "name": "theta-start",
+          "componentMapping": "geometry.thetaStart",
+          "default": "0"
+        },
+        {
+          "name": "width",
+          "componentMapping": "material.width",
+          "default": "512"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-cursor",
+      "description": "The cursor primitive is a reticle that allows for clicking and basic interactivity with a scene on devices that do not have a hand controller. The default appearance is a ring geometry. The cursor is usually placed as a child of the camera.",
+      "attributes": [
+        {
+          "name": "far",
+          "componentMapping": "raycaster.far",
+          "default": "1000"
+        },
+        {
+          "name": "fuse",
+          "componentMapping": "cursor.fuse",
+          "default": "false"
+        },
+        {
+          "name": "fuse-timeout",
+          "componentMapping": "cursor.fuseTimeout",
+          "default": "1500"
+        },
+        {
+          "name": "interval",
+          "componentMapping": "raycaster.interval",
+          "default": "100"
+        },
+        {
+          "name": "objects",
+          "componentMapping": "raycaster.objects",
+          "default": "100"
+        }
+      ]
+    },
+    {
+      "tag": "a-curvedimage",
+      "description": "The curved image primitive creates images that bend around the user. Curved images arranged around the camera can be pleasing for legibility since each pixel sits at the same distance from the user. They can be a better choice than angled flat planes for complex layouts because they ensure a smooth surface rather than a series of awkward seams between planes.",
+      "attributes": [
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "height",
+          "componentMapping": "geometry.height",
+          "default": "1"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "opacity",
+          "componentMapping": "material.opacity",
+          "default": "1"
+        },
+        {
+          "name": "open-ended",
+          "componentMapping": "geometry.openEnded",
+          "default": "true"
+        },
+        {
+          "name": "radius",
+          "componentMapping": "geometry.radius",
+          "default": "2"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "None"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-height",
+          "componentMapping": "geometry.segmentsHeight",
+          "default": "18"
+        },
+        {
+          "name": "segments-radial",
+          "componentMapping": "geometry.segmentsRadial",
+          "default": "48"
+        },
+        {
+          "name": "shader",
+          "componentMapping": "material.shader",
+          "default": "flat"
+        },
+        {
+          "name": "side",
+          "componentMapping": "material.side",
+          "default": "double"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "theta-length",
+          "componentMapping": "geometry.thetaLength",
+          "default": "270"
+        },
+        {
+          "name": "theta-start",
+          "componentMapping": "geometry.thetaStart",
+          "default": "0"
+        },
+        {
+          "name": "transparent",
+          "componentMapping": "material.transparent",
+          "default": "true"
+        }
+      ]
+    },
+    {
+      "tag": "a-cylinder",
+      "description": "The cylinder primitive is used to create tubes and curved surfaces.",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "geometry.height",
+          "default": "1"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "open-ended",
+          "componentMapping": "geometry.openEnded",
+          "default": "false"
+        },
+        {
+          "name": "radius-bottom",
+          "componentMapping": "geometry.radiusBottom",
+          "default": "1"
+        },
+        {
+          "name": "radius-top",
+          "componentMapping": "geometry.radiusTop",
+          "default": "0.8"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-height",
+          "componentMapping": "geometry.segmentsHeight",
+          "default": "18"
+        },
+        {
+          "name": "segments-radial",
+          "componentMapping": "geometry.segmentsRadial",
+          "default": "36"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "theta-length",
+          "componentMapping": "geometry.thetaLength",
+          "default": "360"
+        },
+        {
+          "name": "theta-start",
+          "componentMapping": "geometry.thetaStart",
+          "default": "0"
+        },
+        {
+          "name": "width",
+          "componentMapping": "material.width",
+          "default": "512"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-dodecahedron",
+      "description": "",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "material.height",
+          "default": "256"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "open-ended",
+          "componentMapping": "geometry.openEnded",
+          "default": "false"
+        },
+        {
+          "name": "radius-bottom",
+          "componentMapping": "geometry.radiusBottom",
+          "default": "1"
+        },
+        {
+          "name": "radius-top",
+          "componentMapping": "geometry.radiusTop",
+          "default": "0.8"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-height",
+          "componentMapping": "geometry.segmentsHeight",
+          "default": "18"
+        },
+        {
+          "name": "segments-radial",
+          "componentMapping": "geometry.segmentsRadial",
+          "default": "36"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "theta-length",
+          "componentMapping": "geometry.thetaLength",
+          "default": "360"
+        },
+        {
+          "name": "theta-start",
+          "componentMapping": "geometry.thetaStart",
+          "default": "0"
+        },
+        {
+          "name": "width",
+          "componentMapping": "material.width",
+          "default": "512"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-icosahedron",
+      "description": "",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "detail",
+          "componentMapping": "geometry.detail",
+          "default": "0"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "material.height",
+          "default": "256"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "radius",
+          "componentMapping": "geometry.radius",
+          "default": "1"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "width",
+          "componentMapping": "material.width",
+          "default": "512"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-gltf-model",
+      "description": "The glTF model primitive displays a 3D glTF model created from a 3D modeling program or downloaded from the web.",
+      "attributes": [
+        {
+          "name": "src",
+          "componentMapping": "gltf-model.src",
+          "default": "null"
+        }
+      ]
+    },
+    {
+      "tag": "a-image",
+      "description": "The image primitive shows an image on a flat plane.",
+      "attributes": [
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "height",
+          "componentMapping": "geometry.height",
+          "default": "1"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "opacity",
+          "componentMapping": "material.opacity",
+          "default": "1"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "None"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-height",
+          "componentMapping": "geometry.segmentsHeight",
+          "default": "1"
+        },
+        {
+          "name": "segments-width",
+          "componentMapping": "geometry.segmentsWidth",
+          "default": "1"
+        },
+        {
+          "name": "shader",
+          "componentMapping": "material.shader",
+          "default": "flat"
+        },
+        {
+          "name": "side",
+          "componentMapping": "material.side",
+          "default": "front"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "transparent",
+          "componentMapping": "material.transparent",
+          "default": "true"
+        },
+        {
+          "name": "width",
+          "componentMapping": "geometry.width",
+          "default": "1"
+        }
+      ]
+    },
+    {
+      "tag": "a-light",
+      "description": "A light changes the lighting and shading of the scene.",
+      "attributes": [
+        {
+          "name": "angle",
+          "componentMapping": "light.angle",
+          "default": "60"
+        },
+        {
+          "name": "color",
+          "componentMapping": "light.color",
+          "default": "#fff"
+        },
+        {
+          "name": "decay",
+          "componentMapping": "light.decay",
+          "default": "1"
+        },
+        {
+          "name": "distance",
+          "componentMapping": "light.distance",
+          "default": "0.0"
+        },
+        {
+          "name": "ground-color",
+          "componentMapping": "light.groundColor",
+          "default": "#fff"
+        },
+        {
+          "name": "intensity",
+          "componentMapping": "light.intensity",
+          "default": "1.0"
+        },
+        {
+          "name": "penumbra",
+          "componentMapping": "light.penumbra",
+          "default": "0.0"
+        },
+        {
+          "name": "type",
+          "componentMapping": "light.type",
+          "default": "directional"
+        },
+        {
+          "name": "target",
+          "componentMapping": "light.target",
+          "default": "null"
+        }
+      ]
+    },
+    {
+      "tag": "a-link",
+      "description": "The link primitive provides a compact API to define links that resembles the traditional `<a>` tag.",
+      "attributes": [
+        {
+          "name": "href",
+          "componentMapping": "link.href",
+          "default": ""
+        },
+        {
+          "name": "title",
+          "componentMapping": "link.title",
+          "default": ""
+        },
+        {
+          "name": "src",
+          "componentMapping": "link.src",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "tag": "a-obj-model",
+      "description": "We recommend glTF for distributing assets in production over the web. Check out using the [glTF model primitive](a-gltf-model.md). You can either instead export to COLLADA and use [the converter](https://cesiumjs.org/convertmodel.html) or try out the [OBJ converter](https://github.com/AnalyticalGraphicsInc/OBJ2GLTF).",
+      "attributes": [
+        {
+          "name": "mtl",
+          "componentMapping": "obj-model.mtl",
+          "default": "null"
+        },
+        {
+          "name": "src",
+          "componentMapping": "obj-model.obj",
+          "default": "null"
+        }
+      ]
+    },
+    {
+      "tag": "a-octahedron",
+      "description": "",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "detail",
+          "componentMapping": "geometry.detail",
+          "default": "0"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "material.height",
+          "default": "256"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "radius",
+          "componentMapping": "geometry.radius",
+          "default": "1"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "width",
+          "componentMapping": "material.width",
+          "default": "512"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-plane",
+      "description": "The plane primitive creates flat surfaces using the [geometry](../components/geometry.md) component with the type set to `plane`.",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "geometry.height",
+          "default": "1"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-height",
+          "componentMapping": "geometry.segmentsHeight",
+          "default": "1"
+        },
+        {
+          "name": "segments-width",
+          "componentMapping": "geometry.segmentsWidth",
+          "default": "1"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "width",
+          "componentMapping": "geometry.width",
+          "default": "1"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-ring",
+      "description": "The ring primitive creates a ring or disc shape.",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "material.height",
+          "default": "256"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "radius-inner",
+          "componentMapping": "geometry.radiusInner",
+          "default": "0.8"
+        },
+        {
+          "name": "radius-outer",
+          "componentMapping": "geometry.radiusOuter",
+          "default": "1.2"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-phi",
+          "componentMapping": "geometry.segmentsPhi",
+          "default": "10"
+        },
+        {
+          "name": "segments-theta",
+          "componentMapping": "geometry.segmentsTheta",
+          "default": "32"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "theta-length",
+          "componentMapping": "geometry.thetaLength",
+          "default": "360"
+        },
+        {
+          "name": "theta-start",
+          "componentMapping": "geometry.thetaStart",
+          "default": "0"
+        },
+        {
+          "name": "width",
+          "componentMapping": "material.width",
+          "default": "512"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-sky",
+      "description": "The sky primitive adds a background color or 360° image to a scene. A sky is a large sphere with a color or texture mapped to the inside.",
+      "attributes": [
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "opacity",
+          "componentMapping": "material.opacity",
+          "default": "1"
+        },
+        {
+          "name": "phi-length",
+          "componentMapping": "geometry.phiLength",
+          "default": "360"
+        },
+        {
+          "name": "phi-start",
+          "componentMapping": "geometry.phiStart",
+          "default": "0"
+        },
+        {
+          "name": "radius",
+          "componentMapping": "geometry.radius",
+          "default": "5000"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "None"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-height",
+          "componentMapping": "geometry.segmentsHeight",
+          "default": "20"
+        },
+        {
+          "name": "segments-width",
+          "componentMapping": "geometry.segmentsWidth",
+          "default": "64"
+        },
+        {
+          "name": "shader",
+          "componentMapping": "material.shader",
+          "default": "flat"
+        },
+        {
+          "name": "side",
+          "componentMapping": "material.side",
+          "default": "front"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "theta-length",
+          "componentMapping": "geometry.thetaLength",
+          "default": "180"
+        },
+        {
+          "name": "theta-start",
+          "componentMapping": "geometry.thetaStart",
+          "default": "0"
+        },
+        {
+          "name": "transparent",
+          "componentMapping": "material.transparent",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "tag": "a-sound",
+      "description": "The sound primitive wraps the [sound component](../components/sound.md).",
+      "attributes": [
+        {
+          "name": "autoplay",
+          "componentMapping": "sound.autoplay",
+          "default": "false"
+        },
+        {
+          "name": "loop",
+          "componentMapping": "sound.loop",
+          "default": "false"
+        },
+        {
+          "name": "on",
+          "componentMapping": "sound.on",
+          "default": "null"
+        },
+        {
+          "name": "src",
+          "componentMapping": "sound.src",
+          "default": "null"
+        },
+        {
+          "name": "volume",
+          "componentMapping": "sound.volume",
+          "default": "1"
+        }
+      ]
+    },
+    {
+      "tag": "a-sphere",
+      "description": "The sphere primitive creates a spherical or polyhedron shapes. It wraps an entity that prescribes the [geometry component](../components/geometry.md) with its geometric primitive set to `sphere`.",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "material.height",
+          "default": "256"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "phi-length",
+          "componentMapping": "geometry.phiLength",
+          "default": "360"
+        },
+        {
+          "name": "phi-start",
+          "componentMapping": "geometry.phiStart",
+          "default": "0"
+        },
+        {
+          "name": "radius",
+          "componentMapping": "geometry.radius",
+          "default": "1"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-height",
+          "componentMapping": "geometry.segmentsHeight",
+          "default": "18"
+        },
+        {
+          "name": "segments-width",
+          "componentMapping": "geometry.segmentsWidth",
+          "default": "36"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "theta-length",
+          "componentMapping": "geometry.thetaLength",
+          "default": "180"
+        },
+        {
+          "name": "theta-start",
+          "componentMapping": "geometry.thetaStart",
+          "default": "0"
+        },
+        {
+          "name": "width",
+          "componentMapping": "material.width",
+          "default": "512"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-tetrahedron",
+      "description": "",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "detail",
+          "componentMapping": "geometry.detail",
+          "default": "0"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "material.height",
+          "default": "256"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "radius",
+          "componentMapping": "geometry.radius",
+          "default": "1"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "width",
+          "componentMapping": "material.width",
+          "default": "512"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-text",
+      "description": "Wraps the [text component](../components/text.md).",
+      "attributes": [
+        {
+          "name": "align",
+          "componentMapping": "text.align"
+        },
+        {
+          "name": "alpha-test",
+          "componentMapping": "text.alphaTest"
+        },
+        {
+          "name": "anchor",
+          "componentMapping": "text.anchor"
+        },
+        {
+          "name": "baseline",
+          "componentMapping": "text.baseline"
+        },
+        {
+          "name": "color",
+          "componentMapping": "text.color"
+        },
+        {
+          "name": "font",
+          "componentMapping": "text.font"
+        },
+        {
+          "name": "font-image",
+          "componentMapping": "text.fontImage"
+        },
+        {
+          "name": "height",
+          "componentMapping": "text.height"
+        },
+        {
+          "name": "letter-spacing",
+          "componentMapping": "text.letterSpacing"
+        },
+        {
+          "name": "line-height",
+          "componentMapping": "text.lineHeight"
+        },
+        {
+          "name": "opacity",
+          "componentMapping": "text.opacity"
+        },
+        {
+          "name": "shader",
+          "componentMapping": "text.shader"
+        },
+        {
+          "name": "side",
+          "componentMapping": "text.side"
+        },
+        {
+          "name": "tab-size",
+          "componentMapping": "text.tabSize"
+        },
+        {
+          "name": "transparent",
+          "componentMapping": "text.transparent"
+        },
+        {
+          "name": "value",
+          "componentMapping": "text.value"
+        },
+        {
+          "name": "white-space",
+          "componentMapping": "text.whiteSpace"
+        },
+        {
+          "name": "width",
+          "componentMapping": "text.width"
+        },
+        {
+          "name": "wrap-count",
+          "componentMapping": "text.wrapCount"
+        },
+        {
+          "name": "wrap-pixels",
+          "componentMapping": "text.wrapPixels"
+        },
+        {
+          "name": "z-offset",
+          "componentMapping": "text.zOffset"
+        }
+      ]
+    },
+    {
+      "tag": "a-torus-knot",
+      "description": "The torus knot primitive creates pretzel shapes using the [geometry](../components/geometry.md) component with the type set to `torusKnot`.",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "material.height",
+          "default": "256"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "p",
+          "componentMapping": "geometry.p",
+          "default": "2"
+        },
+        {
+          "name": "q",
+          "componentMapping": "geometry.q",
+          "default": "3"
+        },
+        {
+          "name": "radius",
+          "componentMapping": "geometry.radius",
+          "default": "1"
+        },
+        {
+          "name": "radius-tubular",
+          "componentMapping": "geometry.radiusTubular",
+          "default": "0.2"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-radial",
+          "componentMapping": "geometry.segmentsRadial",
+          "default": "8"
+        },
+        {
+          "name": "segments-tubular",
+          "componentMapping": "geometry.segmentsTubular",
+          "default": "100"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "width",
+          "componentMapping": "material.width",
+          "default": "512"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-torus",
+      "description": "The torus primitive creates donut or tube shapes using the [geometry](../components/geometry.md) component with the type set to `torus`.",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "arc",
+          "componentMapping": "geometry.arc",
+          "default": "360"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "material.height",
+          "default": "256"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "radius",
+          "componentMapping": "geometry.radius",
+          "default": "1"
+        },
+        {
+          "name": "radius-tubular",
+          "componentMapping": "geometry.radiusTubular",
+          "default": "0.2"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-radial",
+          "componentMapping": "geometry.segmentsRadial",
+          "default": "36"
+        },
+        {
+          "name": "segments-tubular",
+          "componentMapping": "geometry.segmentsTubular",
+          "default": "32"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "width",
+          "componentMapping": "material.width",
+          "default": "512"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-triangle",
+      "description": "The triangle primitive creates triangle surfaces using the [geometry](../components/geometry.md) component with the type set to `triangle`.",
+      "attributes": [
+        {
+          "name": "ambient-occlusion-map",
+          "componentMapping": "material.ambientOcclusionMap",
+          "default": "None"
+        },
+        {
+          "name": "ambient-occlusion-map-intensity",
+          "componentMapping": "material.ambientOcclusionMapIntensity",
+          "default": "1"
+        },
+        {
+          "name": "ambient-occlusion-texture-offset",
+          "componentMapping": "material.ambientOcclusionTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "ambient-occlusion-texture-repeat",
+          "componentMapping": "material.ambientOcclusionTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "displacement-bias",
+          "componentMapping": "material.displacementBias",
+          "default": "0.5"
+        },
+        {
+          "name": "displacement-map",
+          "componentMapping": "material.displacementMap",
+          "default": "None"
+        },
+        {
+          "name": "displacement-scale",
+          "componentMapping": "material.displacementScale",
+          "default": "1"
+        },
+        {
+          "name": "displacement-texture-offset",
+          "componentMapping": "material.displacementTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "displacement-texture-repeat",
+          "componentMapping": "material.displacementTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "env-map",
+          "componentMapping": "material.envMap",
+          "default": "None"
+        },
+        {
+          "name": "fog",
+          "componentMapping": "material.fog",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "componentMapping": "material.height",
+          "default": "256"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "normal-map",
+          "componentMapping": "material.normalMap",
+          "default": "None"
+        },
+        {
+          "name": "normal-scale",
+          "componentMapping": "material.normalScale",
+          "default": "1 1"
+        },
+        {
+          "name": "normal-texture-offset",
+          "componentMapping": "material.normalTextureOffset",
+          "default": "0 0"
+        },
+        {
+          "name": "normal-texture-repeat",
+          "componentMapping": "material.normalTextureRepeat",
+          "default": "1 1"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "1 1"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "spherical-env-map",
+          "componentMapping": "material.sphericalEnvMap",
+          "default": "None"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "vertex-a",
+          "componentMapping": "geometry.vertexA",
+          "default": "0  0.5 0"
+        },
+        {
+          "name": "vertex-b",
+          "componentMapping": "geometry.vertexB",
+          "default": "-0.5 -0.5 0"
+        },
+        {
+          "name": "vertex-c",
+          "componentMapping": "geometry.vertexC",
+          "default": "0.5 -0.5 0"
+        },
+        {
+          "name": "width",
+          "componentMapping": "material.width",
+          "default": "512"
+        },
+        {
+          "name": "wireframe",
+          "componentMapping": "material.wireframe",
+          "default": "false"
+        },
+        {
+          "name": "wireframe-linewidth",
+          "componentMapping": "material.wireframeLinewidth",
+          "default": "2"
+        }
+      ]
+    },
+    {
+      "tag": "a-video",
+      "description": "The video primitive plays a video as a texture on a flat plane.",
+      "attributes": [
+        {
+          "name": "color",
+          "componentMapping": "material.color",
+          "default": "#FFF"
+        },
+        {
+          "name": "height",
+          "componentMapping": "geometry.height",
+          "default": "1.75"
+        },
+        {
+          "name": "metalness",
+          "componentMapping": "material.metalness",
+          "default": "0"
+        },
+        {
+          "name": "opacity",
+          "componentMapping": "material.opacity",
+          "default": "1"
+        },
+        {
+          "name": "repeat",
+          "componentMapping": "material.repeat",
+          "default": "None"
+        },
+        {
+          "name": "roughness",
+          "componentMapping": "material.roughness",
+          "default": "0.5"
+        },
+        {
+          "name": "segments-height",
+          "componentMapping": "geometry.segmentsHeight",
+          "default": "1"
+        },
+        {
+          "name": "segments-width",
+          "componentMapping": "geometry.segmentsWidth",
+          "default": "1"
+        },
+        {
+          "name": "shader",
+          "componentMapping": "material.shader",
+          "default": "flat"
+        },
+        {
+          "name": "side",
+          "componentMapping": "material.side",
+          "default": "front"
+        },
+        {
+          "name": "src",
+          "componentMapping": "material.src",
+          "default": "None"
+        },
+        {
+          "name": "transparent",
+          "componentMapping": "material.transparent",
+          "default": "false"
+        },
+        {
+          "name": "width",
+          "componentMapping": "geometry.width",
+          "default": "3"
+        }
+      ]
+    },
+    {
+      "tag": "a-videosphere",
+      "description": "The videosphere primitive plays 360° videos in the background of the scene. Videospheres are a large sphere with the video texture mapped to the inside.",
+      "attributes": [
+        {
+          "name": "autoplay",
+          "componentMapping": "<video>.autoplay",
+          "default": "true"
+        },
+        {
+          "name": "crossOrigin",
+          "componentMapping": "<video>.crossOrigin",
+          "default": "anonymous"
+        },
+        {
+          "name": "loop",
+          "componentMapping": "<video>.loop",
+          "default": "true"
+        },
+        {
+          "name": "radius",
+          "componentMapping": "geometry.radius",
+          "default": "5000"
+        },
+        {
+          "name": "segments-height",
+          "componentMapping": "geometry.segmentsHeight",
+          "default": "64"
+        },
+        {
+          "name": "segments-width",
+          "componentMapping": "geometry.segmentsWidth",
+          "default": "64"
+        }
+      ]
+    }
+  ]
+}
