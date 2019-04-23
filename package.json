@@ -3,6 +3,10 @@
 	"displayName": "A-Frame Completion",
 	"version": "0.1.0",
 	"publisher": "mlueckert",
+	"icon": "images/logo.jpg",
+	"galleryBanner": {
+		"color": "#24C9FF"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/marlon360/a-frame-vscode.git"
