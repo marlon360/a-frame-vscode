@@ -104,7 +104,7 @@ export function activate(context: vscode.ExtensionContext) {
 });
 `;
 
-				const completion = new vscode.CompletionItem('AFRAME.registerComponent');
+				const completion = new vscode.CompletionItem('AFRAME.registerComponent', vscode.CompletionItemKind.Snippet);
 				completion.insertText = new vscode.SnippetString(snippet);
 				completion.documentation = new vscode.MarkdownString("*A-Frame Register Component* ");
 
