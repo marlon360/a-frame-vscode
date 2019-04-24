@@ -63,7 +63,7 @@ export function activate(context: vscode.ExtensionContext) {
 					element.attributes.forEach((attribute) => {
 						const comp = new vscode.CompletionItem(attribute.name, vscode.CompletionItemKind.Method)
 						comp.insertText = new vscode.SnippetString(attribute.name + '="' + '${1:' + attribute.default + '}"');
-						comp.documentation = new vscode.MarkdownString("Component Mapping: `" + attribute.componentMapping + "`\n" + "Default: `" + attribute.default + "`\n");
+						comp.documentation = new vscode.MarkdownString(attribute.description);
 						completions.push(comp);
 					})
 
