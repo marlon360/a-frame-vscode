@@ -35,7 +35,7 @@ markdownJson(settingsPrimitives).then((data) => {
 		let parsedComponents = [];
 		for (const comp of Object.keys(components)) {
 			const newComp = {};
-			newComp["name"] = components[comp].id;
+			newComp["name"] = components[comp].title;
 			newComp["description"] = turndownService.turndown(components[comp].excerpt);
 			parsedComponents.push(newComp);
 		}
@@ -45,7 +45,7 @@ markdownJson(settingsPrimitives).then((data) => {
 		};
 		for (const el of Object.keys(data)) {
 			let element = {};
-			element["tag"] = data[el].id;
+			element["tag"] = data[el].title.replace(/<|>/g, "");
 			element["description"] = turndownService.turndown(data[el].excerpt);
 			element["attributes"] = [];
 			const attributes = tabletojson.convert(data[el].contents);
