@@ -1,5 +1,5 @@
 const markdownJson = require('markdown-json');
-const tabletojson = require('tabletojson');
+const tabletojson = require('tabletojson').Tabletojson;
 var TurndownService = require('turndown');
 
 var turndownService = new TurndownService();
