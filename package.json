@@ -1,8 +1,9 @@
 {
 	"name": "a-frame-completion",
 	"displayName": "A-Frame Completion",
-	"version": "0.4.0",
+	"version": "0.4.1",
 	"publisher": "mlueckert",
+	"description": "Autocompletion + Snippets for A-Frame",
 	"icon": "images/logo.jpg",
 	"galleryBanner": {
 		"color": "#24C9FF",
@@ -16,7 +17,15 @@
 		"vscode": "^1.18.0"
 	},
 	"categories": [
-		"Other"
+		"Programming Languages",
+		"Snippets"
+	],
+	"keywords": [
+		"aframe",
+		"completion",
+		"autocompletion",
+		"webxr",
+		"snippets"
 	],
 	"activationEvents": [
 		"*"
